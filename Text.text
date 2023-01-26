@@ -1,0 +1,106 @@
+function check()
+{
+    question_turn = "player1";
+    answer_turn = "player2";
+
+    user_answer = document.getElementById("input_check_box").value;
+    var AI_answer = 0;
+
+    if(operator === "*")
+    {
+        AI_answer = Number(document.getElementById("number1").value)*Number(document.getElementById("number2").value);
+    }
+    else if(operator === "+")
+    {
+        AI_answer = Number(document.getElementById("number1").value)+Number(document.getElementById("number2").value);
+    }
+    else if(operator === "-")
+    {
+        AI_answer = Number(document.getElementById("number1").value)-Number(document.getElementById("number2").value);
+    }
+    else if(operator === "/")
+    {
+        AI_answer = Number(document.getElementById("number1").value)/Number(document.getElementById("number2").value);
+    }
+
+
+    if(user_answer == AI_answer)
+    {
+        console.log("Correct Answer: "+AI_answer);
+        if(question_turn == "player2")
+        {
+            player1_score++;
+            document.getElementById("player1_score").innerHTML = player1_score;
+        }
+        else
+        {
+            console.log("Correct Answer: "+AI_answer);
+            player2_score++;
+            document.getElementById("player2_score").innerHTML = player2_score;
+        }
+    }
+
+
+    if(question_turn == "player1")
+    {
+        question_turn = "player2"
+        document.getElementById("player_question").innerHTML = "Question Turn - " + player2_name ;
+    }
+    else
+    {
+        question_turn = "player1"
+        document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name ;
+    }
+    if(answer_turn == "player1")
+    {
+        answer_turn = "player2"
+        document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_name ;
+    }
+    else
+    {
+        answer_turn = "player1"
+        document.getElementById("player_answer").innerHTML = "Answer Turn - " + player1_name ;
+    }
+    document.getElementById("output").innerHTML = "";
+}
+
+
+
+
+
+
+
+
+
+        // Check if the user's answer is correct
+    if (userAnswer === correctAnswer) 
+    {
+      
+      if (question_turn == "player1") {
+        player1_score = player1_score +1;
+        document.getElementById("player1_score").innerHTML = player1_score;
+        document.getElementById("output").innerHTML = "";
+      } 
+      else {
+        
+        player2_score = player2_score +1;
+        document.getElementById("player2_score").innerHTML = player2_score;
+        document.getElementById("output").innerHTML = "";
+      }
+    }
+    
+    // Switch the question and answer turns
+    if(question_turn === "player1")
+    {
+    question_turn = "player2"
+    answer
+    document.getElementById("player_question").innerHTML = "Question Turn - " + player2_name ;
+    document.getElementById("player_answer").innerHTML = "Answer Turn - " + player1_name ;
+    }
+    
+    else
+    {
+    question_turn = "player1"
+    document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name ;
+    document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_name ;
+    }

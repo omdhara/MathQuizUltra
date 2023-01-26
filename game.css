@@ -1,0 +1,63 @@
+body
+{
+	background: yellowgreen;
+	text-align: center;
+	
+}
+
+	#Box1 , #Box2
+	{
+		background: lightyellow;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+
+
+#player1_name , #player2_name
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+#Box1{
+	text-align: center;
+}
+
+#Box2{
+	text-align: center;
+}
+
+#design {
+	font-weight: bold;
+}
+
+#answer_label
+{
+background-color: rgba(7, 187, 7, 0.875); width: 27%; border-style: none; border-radius: 5px;
+}

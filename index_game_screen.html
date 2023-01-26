@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Math Quiz!</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+
+
+<div class="container">
+	<center>
+
+		<h2 style="color: white; font-family:'Poppins', sans-serif;">The Math Quiz!</h2>
+        <hr>
+		
+		<h3>-ScoreBoard-</h3>
+		<h4 id="player1_name" class="design"></h4> <span id="player1_score"></span>
+		<h4 id="player2_name" class="design"></h4> <span id="player2_score"></span>
+		<hr>
+		<h3 id="player_question">Question Turn:</h3>
+		<h3 id="player_answer">Answer Turn:</h3>
+
+		<br>
+		<br>
+
+		<div id="output" class="col-lg-6">
+		</div>
+		<br>
+
+		<label>Send your Number: <b style="color: red">Please fill the inputs as said.</b></label>
+		<br>
+		<label id="answer_label" style="color: green; font-weight: bold; font-size: medium; border-width: 1rem; border-color: green; border-radius: 2px;"></label>
+		<br>
+
+		<input id="number1" placeholder="Enter The First Number Here" type="text" class="form-control">
+		<br>
+		<input id="opretor" placeholder="Enter any Opertor from these - , + , / , * " type="text" class="form-control">
+
+		<br>
+		<input id="number2" placeholder="Enter The Second Number Here" type="text" class="form-control">
+
+		<br>
+
+		<button id="button" onclick="Send()" style="background-color: rgba(7, 255, 7, 0.875); width: 27%; border-style: none; border-radius: 5px;">Send</button>
+
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
